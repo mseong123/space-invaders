@@ -1,0 +1,100 @@
+body {
+  text-align:center;
+}
+
+#game{
+  display:block;
+  margin:0 auto;
+  outline:none;
+  position:relative;
+}
+.loadfont {
+  display:none;
+}
+
+button:active,
+button:focus {
+  outline:none;
+}
+.wrapper {
+  position:relative;
+  display:inline-block;
+  
+}
+
+.start,
+.restart{
+  position:absolute;
+  border:none;
+  background-color:#617F7F;
+  left:50%;
+  top:55%;
+  width:160px;
+  margin-left:-80px;
+  z-index:2;
+  border-radius:4px;
+  font-family:"Major Mono Display", sans-serif;
+  font-size:15px;
+}
+.restart {
+  display:none;
+  top:45%;
+  font-size:30px;
+}
+
+.blink {
+  animation:blinking 1.5s linear infinite;
+}
+
+@keyframes blinking {
+  0%,49% {
+    opacity:1
+  }
+  50%,99% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+}
+
+.left {
+  position:absolute;
+  bottom:15%;
+  left:5%;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  opacity:0.1;
+  font-size:50px;
+  padding:none;
+  line-height:60px;
+  display:none;
+}
+.right {
+  position:absolute;
+  bottom:15%;
+  right:5%;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  opacity:0.1;
+  font-size:50px;
+  padding:none;
+  line-height:60px;
+  display:none;
+}
+
+@media (min-width:768px) {
+  .start {
+    font-size:20px;
+    width:200px;
+  margin-left:-100px;
+  }
+}
+
+
+
+
+
+
