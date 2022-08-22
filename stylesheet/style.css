@@ -1,5 +1,6 @@
 body {
   text-align:center;
+  font-family:"Major Mono Display", sans-serif;
 }
 
 #game{
@@ -19,7 +20,6 @@ button:focus {
 .wrapper {
   position:relative;
   display:inline-block;
-  
 }
 
 .start,
